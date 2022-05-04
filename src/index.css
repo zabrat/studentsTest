@@ -67,3 +67,16 @@ textarea,
 select {
   font: inherit;
 }
+
+.inputs{
+  display: flex;
+}
+.sign{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons{
+  margin: 10px;
+}

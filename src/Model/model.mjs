@@ -1,3 +1,9 @@
 export default class Model {
-  constructor() {}
+  constructor() {
+    this.firstInputValue = null;
+    this.secondInputValue = null;
+
+    this.result = null;
+    this.signs = null;
+  }
 }
