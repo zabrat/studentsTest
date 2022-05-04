@@ -1,3 +1,6 @@
 export default class View {
-  constructor() {}
+  constructor() {
+    this.znaki = document.querySelectorAll(".znak");
+
+  }
 }

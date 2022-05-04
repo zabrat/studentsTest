@@ -1,3 +1,8 @@
 export default class Model {
-  constructor() {}
+  constructor() {
+    this.num1 = 0;
+    this.num2 = 0;
+    this.operator = "";
+    this.result = 0;
+  }
 }
