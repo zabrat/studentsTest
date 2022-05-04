@@ -28,13 +28,13 @@ export default class Controller {
     const input2 = this.model.secondNumber;
     switch (this.view.mode.innerText) {
       case '+':
-        this.view.result.innerText = input1 + input2;
+        this.view.result.value = input1 + input2;
       case '-':
-        this.view.result.innerText =  input1 - input2;
+        this.view.result.value =  input1 - input2;
       case '*':
-        this.view.result.innerText =  input1 * input2;
+        this.view.result.value =  input1 * input2;
       case '/':
-        this.view.result.innerText =  input1 / input2;
+        this.view.result.value =  input1 / input2;
 
       default:
         return 'error';
