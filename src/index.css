@@ -67,3 +67,7 @@ textarea,
 select {
   font: inherit;
 }
+
+.inputsPlaces{
+  display: flex;
+}
