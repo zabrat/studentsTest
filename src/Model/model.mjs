@@ -1,3 +1,6 @@
 export default class Model {
-  constructor() {}
+  constructor() {
+    const firstNumber = 0;
+    const secondNumber= 0;
+  }
 }
