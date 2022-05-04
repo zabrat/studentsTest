@@ -1,3 +1,7 @@
 export default class Model {
-  constructor() {}
+  constructor() {
+    this.firstNumber = 0;
+    this.secondNumber = 0;
+  }
+
 }
