@@ -5,10 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
-    <title></title>
+    <title>Eldaniz</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="container">
+        <div class="input__body">
+          
+            <input type="number"   class="input1" placeholder=" Введите значение" required
+                minlength="1" maxlength="16">
+            <p class="znak"></p>
+            <input type="number"  class="input2" placeholder=" Введите значение" required
+                minlength="1" maxlength="16">
+            <p>=</p>
+        </div>
+        <div class="button__block">
+          <button class="plus" value="+">+</button>
+          <button class="minus" value="-">-</button>
+          <button class="umn" value="*">*</button>
+          <button class="delenie" value="/">/</button>
+      </div>
+       
+      <p class="otvet"></p>
     <script type="module" src="./index.mjs" defer></script>
   </body>
 </html>

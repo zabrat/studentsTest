@@ -67,3 +67,42 @@ textarea,
 select {
   font: inherit;
 }
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.button__block input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:checked + label {
+  background: #4e2682;
+  color: #ffffff;
+}
+
+.button__block label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px 15px;
+  line-height: 34px;
+  border: 1px solid #999;
+  border-right: none;
+  background-color: rgb(172, 17, 128);
+}
+
+
+.button__block:first-child label {
+  border-radius: 6px 0 0 6px;
+}
+
+.button__block:last-child label {
+  border-radius: 0 6px 6px 0;
+  border-right: 1px solid #999;
+}
+
+
+
+.left1 label:hover {
+  color: #666;
+}
