@@ -14,12 +14,12 @@ export default class Controller {
     }
 
     this.view.input1.addEventListener('input', (e) => {
-        this.model.firstNumber =e.target.value; 
+        this.model.firstNumber = e.target.value; 
         this.solve();
   });
 
   this.view.input2.addEventListener('input', (e) => {
-      this.model.secondNumber =e.target.value;
+      this.model.secondNumber = e.target.value;
       this.solve();
   });
   }
@@ -29,12 +29,16 @@ export default class Controller {
     switch (this.view.mode.innerText) {
       case '+':
         this.view.result.value = input1 + input2;
+        break;
       case '-':
         this.view.result.value =  input1 - input2;
+        break;
       case '*':
         this.view.result.value =  input1 * input2;
+        break;
       case '/':
         this.view.result.value =  input1 / input2;
+        break;
 
       default:
         return 'error';
