@@ -37,20 +37,16 @@ export default class Controller {
   calculation() {
     switch (this.model.signs) {
       case "+":
-        this.model.result =
-          +this.model.firstInputValue + +this.model.secondInputValue;
+        this.model.plas();
         break;
       case "-":
-        this.model.result =
-          +this.model.firstInputValue - +this.model.secondInputValue;
+        this.model.minus();
         break;
       case "/":
-        this.model.result =
-          this.model.firstInputValue / this.model.secondInputValue;
+        this.model.division();
         break;
       case "*":
-        this.model.result =
-          this.model.firstInputValue * this.model.secondInputValue;
+        this.model.multiply();
         break;
     }
   }
