@@ -1,3 +1,8 @@
 export default class View {
-  constructor() {}
+  constructor() {
+    this.root = document.getElementById("root");
+    
+  }
+  init() {}
+    
 }

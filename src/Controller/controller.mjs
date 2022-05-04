@@ -4,5 +4,9 @@ export default class Controller {
     this.model = model;
   }
 
-  init() {}
+  init() {
+    this.button.array.forEach(element => {
+      this.button.addEventListener(("submit"))
+    });
+  }
 }
