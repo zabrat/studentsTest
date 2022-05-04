@@ -67,3 +67,9 @@ textarea,
 select {
   font: inherit;
 }
+
+
+.numbers{
+  display: flex;
+  gap: 15px;
+}
