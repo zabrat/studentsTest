@@ -67,3 +67,12 @@ textarea,
 select {
   font: inherit;
 }
+.test{
+  display: flex;
+  
+}
+.checkbox{
+  display: flex;
+
+}
+
