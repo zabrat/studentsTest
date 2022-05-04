@@ -28,7 +28,7 @@ export default class Controller {
     const input2 = this.model.secondNumber;
     switch (this.view.mode.innerText) {
       case '+':
-        this.view.result.value = input1 + input2;
+        this.view.result.value = Number(input1) + Number(input2);
         break;
       case '-':
         this.view.result.value =  input1 - input2;
