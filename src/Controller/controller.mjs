@@ -8,7 +8,6 @@ export default class Controller {
     this.addListenerInpL();
     this.addListenerInpR();
     this.addListenerButton();
-    // this.addAnswer();
   }
 
   addListenerButton() {
