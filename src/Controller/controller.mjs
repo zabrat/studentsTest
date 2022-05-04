@@ -23,26 +23,23 @@ export default class Controller {
             this.view.firstSpan.innerText = event.target.value;
             this.view.secondSpan.innerText =
               this.model.firstNumber + this.model.secondNumber;
-            this.model.result = this.view.secondSpan.innerText;
             break;
           case "-":
             this.view.firstSpan.innerText = event.target.value;
             this.view.secondSpan.innerText =
               this.model.firstNumber - this.model.secondNumber;
-            this.model.result = this.view.secondSpan.innerText;
             break;
           case "/":
             this.view.firstSpan.innerText = event.target.value;
             this.view.secondSpan.innerText =
               this.model.firstNumber / this.model.secondNumber;
-            this.model.result = this.view.secondSpan.innerText;
             break;
           case "*":
             this.view.firstSpan.innerText = event.target.value;
             this.view.secondSpan.innerText =
               this.model.firstNumber * this.model.secondNumber;
-            this.model.result = this.view.secondSpan.innerText;
         }
+        this.model.result = this.view.secondSpan.innerText;
       });
     });
   }
