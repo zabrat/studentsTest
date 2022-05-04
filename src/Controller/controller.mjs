@@ -19,21 +19,11 @@ export default class Controller {
   }
 
   chooseSign() {
-    this.view.sumButton.addEventListener("click", (e) => {
-      this.view.selectedSign.innerText = e.target.innerText;
-      this.calc();
-    });
-    this.view.subtractButton.addEventListener("click", (e) => {
-      this.view.selectedSign.innerText = e.target.innerText;
-      this.calc();
-    });
-    this.view.multiplyButton.addEventListener("click", (e) => {
-      this.view.selectedSign.innerText = e.target.innerText;
-      this.calc();
-    });
-    this.view.divideButton.addEventListener("click", (e) => {
-      this.view.selectedSign.innerText = e.target.innerText;
-      this.calc();
+    this.view.signsArr.forEach((el) => {
+      el.addEventListener("click", (e) => {
+        this.view.selectedSign.innerText = e.target.innerText;
+        this.calc();
+      });
     });
   }
 

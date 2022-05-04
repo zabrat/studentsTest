@@ -1,8 +1,8 @@
 export default class Model {
   constructor() {
-    this.leftValue = +document.getElementById("left-hand").value;
-    this.rightValue = +document.getElementById("right-hand").value;
-    this.selectedSignValue = document.getElementById("selected-sign").innerText;
-    this.resultValue = +document.getElementById("result").innerText;
+    this.leftValue = 0;
+    this.rightValue = 0;
+    this.selectedSignValue = "click sign below";
+    this.resultValue = "result";
   }
 }

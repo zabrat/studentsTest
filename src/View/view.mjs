@@ -4,9 +4,6 @@ export default class View {
     this.right = document.getElementById("right-hand");
     this.selectedSign = document.getElementById("selected-sign");
     this.result = document.getElementById("result");
-    this.sumButton = document.getElementById("sum");
-    this.subtractButton = document.getElementById("subtract");
-    this.multiplyButton = document.getElementById("multiply");
-    this.divideButton = document.getElementById("divide");
+    this.signsArr = document.querySelectorAll(".sign");
   }
 }
