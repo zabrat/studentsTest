@@ -5,24 +5,31 @@ export default class Controller {
   }
 
   init() {
-    let ravno = document.querySelector(".ravno");
-    this.model.znaki.forEach((el) => {
+    this.view.num1.addEventListener("keyup", (e) => {
+      this.model.num1 = Number(e.target.value);
+    });
+    this.view.num2.addEventListener("keyup", (e) => {
+      this.model.num2 = Number(e.target.value);
+    });
+
+    // let ravno = document.querySelector(".ravno");
+
+    this.view.znaki.forEach((el) => {
       el.addEventListener("click", () => {
-        this.model.num1 = Number(document.querySelector(".firstNumber").value);
-        this.model.num2 = Number(document.querySelector(".secondNumber").value);
         switch (el.innerText) {
           case "+":
-            ravno.innerText = this.model.num1 + this.model.num2;
+            this.view.ravno.innerText = this.model.num1 + this.model.num2;
             console.log(this.model.num1, this.model.num2);
+            console.log(this.view.ravno);
             break;
           case "-":
-            ravno.innerText = this.model.num1 - this.model.num2;
+            this.view.ravno.innerText = this.model.num1 - this.model.num2;
             break;
           case "*":
-            ravno.innerText = this.model.num1 * this.model.num2;
+            this.view.ravno.innerText = this.model.num1 * this.model.num2;
             break;
           case "/":
-            ravno.innerText = this.model.num1 / this.model.num2;
+            this.view.ravno.innerText = this.model.num1 / this.model.num2;
             break;
         }
       });
